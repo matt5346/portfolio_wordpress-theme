@@ -1,0 +1,76 @@
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+a:hover {
+  color: #47ff6f; }
+
+p {
+  color: #888; }
+
+.color_element {
+  color: #47ff6f; }
+
+.color_bg {
+  background-color: #47ff6f; }
+
+.color_border {
+  border-color: #47ff6f; }
+
+.bg_light {
+  background-color: #FAFAFA; }
+
+.bg_dark {
+  background-color: #222;
+  color: #ffffff; }
+  .bg_dark .description_wrapper::after {
+    background: #ffffff; }
+
+.s_about p:nth-child(even) {
+  color: #47ff6f; }
+
+.resume_item .year {
+  background-color: #47ff6f;
+  color: #fff; }
+
+.s-portfolio .content li {
+  color: #888; }
+  .s-portfolio .content li.active {
+    color: #47ff6f;
+    border-bottom: 1px solid #47ff6f; }
+  .s-portfolio .content li:hover {
+    color: rgba(71, 255, 111, 0.7); }
+
+.main_form button:hover {
+  background: #47ff6f; }
+
+.work_description button.mfp-close {
+  color: #47ff6f; }
+
+.top_wrapper .top_text p {
+  color: #47ff6f; }
+
+.top_wrapper .top_text h1 {
+  color: #47ff6f;
+  border: 8px solid #47ff6f; }
+
+.header svg path {
+  fill: #47ff6f; }
+
+.top_mnu ul a:hover {
+  color: #47ff6f; }
+
+.section.s-portfolio .content .portfolio_item .item_overlay a:hover {
+  background-color: #47ff6f; }
+
+.section.s-about .col-md-4 p:nth-child(even) {
+  color: #47ff6f; }
+
+.mfp-content .slide .slide_text h1 {
+  color: #47ff6f; }
+
+button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+  color: #47ff6f; }
+
+button.mfp-arrow.mfp-arrow-left.mfp-prevent-close::before {
+  color: #47ff6f; }

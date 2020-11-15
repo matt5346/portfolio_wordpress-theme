@@ -1,0 +1,114 @@
+@import "../bourbon/bourbon"
+
+$color: #47ff6f //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	&:hover
+		color: $color
+p
+	color: $text_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+.bg_light
+	background-color: $bg_light
+.bg_dark
+	background-color: $main_color
+	color: #ffffff
+	& .description_wrapper
+		&::after
+			background: #ffffff
+
+.s_about
+	& p
+		&:nth-child(even)
+			color: $color
+
+.resume_item
+	.year
+		background-color: $color
+		color: #fff
+
+.s-portfolio
+	& .content
+		& li
+			color: $text_color
+			&.active
+				color: $color
+				border-bottom: 1px solid $color
+			&:hover
+				color: rgba($color, .7)
+			
+.main_form
+	button
+		&:hover
+			background: $color
+
+.work_description
+	& button
+		&.mfp-close
+			color: $color
+
+.top_wrapper
+	.top_text
+		p
+			color: $color
+		h1
+			color: $color
+			border: 8px solid $color
+
+.header
+	& svg
+		& path
+			fill: $color 
+
+.top_mnu
+	ul
+		a
+			&:hover
+				color: $color
+
+.section
+	&.s-portfolio
+		& .content
+			& .portfolio_item
+				& .item_overlay
+					& a
+						&:hover
+							background-color: $color
+	&.s-about
+		& .col-md-4
+			& p
+				&:nth-child(even)
+					color: $color
+
+.mfp-content
+	& .slide
+		& .slide_text
+			& h1
+				color: $color
+
+button
+	&.mfp-arrow
+		&.mfp-arrow-right
+			&.mfp-prevent-close
+					color: $color
+		&.mfp-arrow-left
+			&.mfp-prevent-close
+				&::before
+					color: $color

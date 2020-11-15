@@ -1,0 +1,76 @@
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+a:hover {
+  color: #47acff; }
+
+p {
+  color: #888; }
+
+.color_element {
+  color: #47acff; }
+
+.color_bg {
+  background-color: #47acff; }
+
+.color_border {
+  border-color: #47acff; }
+
+.bg_light {
+  background-color: #FAFAFA; }
+
+.bg_dark {
+  background-color: #222;
+  color: #ffffff; }
+  .bg_dark .description_wrapper::after {
+    background: #ffffff; }
+
+.s_about p:nth-child(even) {
+  color: #47acff; }
+
+.resume_item .year {
+  background-color: #47acff;
+  color: #fff; }
+
+.s-portfolio .content li {
+  color: #888; }
+  .s-portfolio .content li.active {
+    color: #47acff;
+    border-bottom: 1px solid #47acff; }
+  .s-portfolio .content li:hover {
+    color: rgba(71, 172, 255, 0.7); }
+
+.main_form button:hover {
+  background: #47acff; }
+
+.work_description button.mfp-close {
+  color: #47acff; }
+
+.top_wrapper .top_text p {
+  color: #47acff; }
+
+.top_wrapper .top_text h1 {
+  color: #47acff;
+  border: 8px solid #47acff; }
+
+.header svg path {
+  fill: #47acff; }
+
+.top_mnu ul a:hover {
+  color: #47acff; }
+
+.section.s-portfolio .content .portfolio_item .item_overlay a:hover {
+  background-color: #47acff; }
+
+.section.s-about .col-md-4 p:nth-child(even) {
+  color: #47acff; }
+
+.mfp-content .slide .slide_text h1 {
+  color: #47acff; }
+
+button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+  color: #47acff; }
+
+button.mfp-arrow.mfp-arrow-left.mfp-prevent-close::before {
+  color: #47acff; }

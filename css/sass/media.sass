@@ -1,0 +1,208 @@
+@import "bourbon/bourbon"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	
+
+
+    .section
+        & .description_wrapper
+            margin-bottom: 30px
+        &.s-about
+            & .col-md-4
+                margin: 30px auto 10px auto
+                width: 80%
+                & ul
+                    text-align: left
+                & .profile_image
+                    & img
+                        max-width: 280px
+                & .tools_wrap
+                    text-align: center
+                    & ul
+                        text-align: center
+                /*-------*/
+    .logo_box
+        width: 30%
+
+
+    .section.s-portfolio .content .portfolio_item img
+        height: 300px
+
+    .section.s-portfolio .content .portfolio_item .item_overlay
+        opacity: 1
+        left: unset
+        width: 200px
+        background: rgba(0, 0, 0, 0.9)
+        padding-top: 20%
+        & a
+            height: 60px
+            line-height: 60px
+            width: 80%
+            background: #FF6347
+            font-weight: 700
+
+    .top_wrapper .top_text h1
+        margin-bottom: 100px
+
+    button.mfp-arrow.mfp-arrow-right.mfp-prevent-close::before
+        font-size: 50px
+
+    .mfp-arrow-right
+        right: 10px
+
+    button.mfp-arrow.mfp-arrow-left.mfp-prevent-close::before
+        font-size: 50px
+    
+    .mfp-arrow-left
+        left: 10px
+
+
+@media only screen and (max-width : 768px)
+
+    .work_description
+        margin: auto
+        max-width: 400px
+        background: #ffffff
+        border-radius: 4px
+        position: relative
+        & h3
+            text-align: center
+            padding-top: 15px
+            margin-bottom: 10px
+            font-weight: 400
+            font-size: 16px
+        & p
+            text-align: justify
+            padding: 0 10px
+            font-size: 14px
+            margin-top: 10px
+            margin-bottom: 15px
+            //-----//     
+    .section
+        &.s-resume
+            & .col-md-6
+                & h3
+                    font-size: 16px
+                    font-weight: 400
+                    text-transform: uppercase
+                &:nth-child(1)
+                    text-align: center
+                    border-right: 0
+                    & i
+                        margin-right: 0
+                &:nth-child(2)
+                    text-align: center
+                    & i
+                        margin-left: 0
+                .resume_item
+                    text-align: left
+                    margin-bottom: 20px
+
+
+                    
+@media only screen and (max-width : 576px)
+    .mfp-gallery
+        & .mfp-content
+            & .slide
+                left: 1%
+                top: 50px
+                width: 70%
+                & img
+                    min-height: 200px
+                & .slide_text
+                    border-top: 2px solid #000000
+                    padding: 5px
+                    text-align: left
+                    & h1
+                        opacity: .7
+                        margin-bottom: 2px
+                        margin-top: 0
+                        font-size: 22px
+                    & h3
+                        margin-top: 0
+                        font-size: 20px
+                        opacity: .5
+                        padding-bottom: 3px
+                        margin-top: 0
+                        text-transform: uppercase
+                    & h4
+                        font-size: 18px
+                        padding-bottom: 3px
+                        margin-top: 0
+                    & a
+                        font-size: 16px
+                    & span
+                        font-size: 16px
+                    & p
+                        font-size: 16px
+
+    .section
+        &.s-about
+            & .col-md-4
+                width: 100%
+        & .description_wrapper
+          margin-bottom: 30px
+          &.s-about
+              & .col-md-4
+                  & .profile_image
+                      & img
+                          max-width: 200px
+
+    .logo_box
+        width: 50%
+
+    //--------------footer--------------//
+
+    .footer
+        & .col-md-12
+            flex-wrap: wrap
+            text-align: center
+            & span
+                display: block
+                width: 96%
+                margin-bottom: 10px
+            & ul
+                padding: 0
+
+    .social_wrap
+        margin: 0 auto
+        li
+            width: 30px
+            height: 30px
+            font-size: 18px
+            padding-top: 7px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px)
+	/**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

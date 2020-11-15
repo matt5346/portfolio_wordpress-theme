@@ -1,0 +1,886 @@
+@import "bourbon/bourbon"
+
+@keyframes spin 
+  0% 
+    transform: rotate(0deg)
+  
+  25% 
+    transform: rotate(360deg)
+  
+  30% 
+    transform: rotate(370deg)
+  
+  35% 
+    transform: rotate(360deg)
+  
+  100% 
+    transform: rotate(360deg)
+  
+
+
+@keyframes spin2 
+  0% 
+    transform: rotate(0deg)
+  
+  20% 
+    transform: rotate(0deg)
+  
+  30% 
+    transform: rotate(-180deg)
+  
+  35% 
+    transform: rotate(-190deg)
+  
+  40% 
+    transform: rotate(-180deg)
+  
+  78% 
+    transform: rotate(-180deg)
+  
+  95% 
+    transform: rotate(-360deg)
+  
+  98% 
+    transform: rotate(-370deg)
+  
+  100% 
+    transform: rotate(-360deg)
+  
+
+
+@keyframes spin3 
+  0% 
+    transform: rotate(0deg)
+  
+  27% 
+    transform: rotate(0deg)  
+  
+  40% 
+    transform: rotate(180deg)
+  
+  45% 
+    transform: rotate(190deg)
+  
+  50% 
+    transform: rotate(180deg)
+  
+  62% 
+    transform: rotate(180deg)
+  
+  75% 
+    transform: rotate(360deg)
+  
+  80% 
+    transform: rotate(370deg)
+  
+  85% 
+    transform: rotate(360deg)
+  
+  100% 
+    transform: rotate(360deg)
+  
+@keyframes ellipsis
+	to
+		width: 1.25em
+
+@keyframes spin4 
+  0% 
+    transform: rotate(0deg)
+  
+  38% 
+    transform: rotate(0deg)
+  
+  60% 
+    transform: rotate(-360deg)
+  
+  65% 
+    transform: rotate(-370deg)
+  
+  75% 
+    transform: rotate(-360deg)
+  
+  100% 
+    transform: rotate(-360deg)
+  
+
+	
+@keyframes rotate
+    0% 
+        transform: rotateX(0)
+    1% 
+        transform: rotateX(0)
+    100% 
+        transform: rotateX(360deg)
+
+.portfolio_btn
+	position: relative
+	margin: 30px auto
+	border: none
+	background: rgba(255, 99, 71, 0.9)
+	color: rgba(255, 255, 255, 0.85)
+	width: 200px
+	height: 60px
+	font-size: 16px
+	font-weight: 700
+	transition: all .2s linear
+	& .arrow_box
+		position: absolute
+		top: 14px
+		right: 7px
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 35px
+		height: 35px
+		background: #fff
+		border-radius: 50%
+		opacity: 0.9
+		transition: all .2s linear
+		& .arrow
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 25px
+			width: 35px
+			height: 35px
+			color: rgba(255, 99, 71, 0.9)
+			transition: all .2s linear
+	& .text
+		display: block
+		transition: all .2s linear
+	&:hover
+		background: rgba(255, 99, 71, 1)
+		color: rgba(255, 255, 255, 1)
+		& .arrow
+			opacity: 1
+			transform: rotate(90deg)
+		& .text
+			transform: translateX(-15px)
+	&:focus
+		outline: none
+
+.close_box
+	position: absolute
+	text-align: center
+	bottom: 15%
+
+.close_loader_btn
+	margin: 30px auto
+	border: none
+	background: rgba(255, 99, 71, 0.9)
+	color: rgba(255, 255, 255, 0.85)
+	width: auto
+	padding: 10px 20px
+	font-size: 16px
+	font-weight: 700
+	transition: all .2s linear
+	cursor: pointer
+	&:hover
+		background: rgba(255, 99, 71, 1)
+		color: rgba(255, 255, 255, 1)
+		transform: scale(1.08)
+
+.container_preloader
+	position: fixed
+	z-index: 10000
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 100%
+	background: rgba(#fff, .7)
+	transition: all .2s linear
+	& .loading
+		position: absolute
+		top: 35%
+		font-family: 'Times New Roman', Times, serif
+		font-weight: 900
+	&.fade
+		opacity: 0
+		&.complete
+			display: none
+		
+	& .loading:after
+		position: absolute
+		font-size: 40px
+		overflow: hidden
+		display: inline-block
+		vertical-align: bottom
+		animation: ellipsis steps(4, end) 2s infinite
+		content: "\2026"
+		width: 0px
+  
+
+
+.dash 
+	margin: 0 15px
+	width: 35px
+	height: 15px
+	border-radius: 8px
+	background: #ff6347
+	box-shadow: 0 0 10px 0 #FECDFF
+
+
+.uno 
+	margin-right: -18px
+	transform-origin: center left
+	animation: spin 3s linear infinite  
+
+
+.dos 
+	transform-origin: center right
+	animation: spin2 3s linear infinite
+	animation-delay: .2s
+
+
+.tres 
+	transform-origin: center right
+	animation: spin3 3s linear infinite
+	animation-delay: .3s
+
+
+.cuatro 
+	transform-origin: center right
+	animation: spin4 3s linear infinite
+	animation-delay: .4s
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+section,
+header
+	position: relative
+
+.header
+	background-image: url(../img/bg_2.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+
+.content
+	margin-top: 30px
+
+.section
+	padding: 50px 0
+
+.hidden
+	display: none
+
+.page
+	overflow: hidden
+
+.container
+	max-width: 1200px
+	width: 100%
+	margin: 0 auto
+	padding: 0 20px
+
+	//---------------header-------------------//
+.parallax-mirror
+	visibility: visible!important
+
+.header
+	min-height: 620px
+	padding-top: 20px
+	& svg
+		position: relative
+		z-index: 100
+		width: 80px
+		height: 80px
+		transition: all .2s linear
+
+.toggle_mnu
+  &.fixed
+    position: fixed
+
+.toggle_mnu
+	width: 60px
+	height: 60px
+	position: absolute
+	z-index: 100
+	border: none
+	right: 20px
+	top: 20px
+	span
+		display: block
+
+$w: 28px
+$h: 3px
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	display: block
+
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+.top_mnu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.85)
+	z-index: 50
+	right: 0
+	top: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 180px
+		text-align: center
+		& li
+			&:nth-child(1) a
+				animation-delay: 0
+			&:nth-child(2) a
+				animation-delay: .1s
+			&:nth-child(3) a
+				animation-delay: .2s
+			&:nth-child(4) a
+				animation-delay: .3s
+		a
+			color: #fff
+			display: block
+			text-transform: uppercase
+			font-size: 12px
+			opacity: 0
+			position: relative
+			height: 60px
+			outline: none
+			span
+				display: block
+				position: relative
+				top: -40px
+				left: 0
+				height: 100%
+				&:hover
+					background-color: rgba(255,255,255,.08)
+
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	.top_descr
+		display: table-row
+		.top_centered
+			position: relative
+			top: 5%
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+		&:hover
+			& h1
+				border-top: 8px solid transparent
+				border-bottom: 8px solid transparent
+				border-left: 8px solid #ff6347
+				border-right: 8px solid #ff6347
+				background: transparent
+			& p
+				&:after
+					transform: scale(1)
+
+		+transition(all 1s ease)
+		p
+			position: relative
+			width: fit-content
+			font-size: 20px
+			font-weight: 700
+			margin: 0 auto
+			text-transform: uppercase
+			color: #ff6347de
+			+animation-delay(1s)
+			&:after
+				content: ''
+				width: 100%
+				height: 3px
+				display: block
+				position: absolute
+				bottom: -5px
+				background: #ff6347
+				transform: scale(0)
+				transition: all .2s linear
+		h1
+			display: inline-block
+			padding: 10px 35px
+			border: 8px solid #ff6347
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 2.8em
+			background-color: rgba(0,0,0,.1)
+			margin-left: 20px
+			margin-right: 20px
+			transition: all .2s linear
+			+animation-delay(.5s)
+
+.toggle_mnu
+	background-color: #000
+
+@keyframes ball-bounce
+	0%, 100%
+		transform: scale(0) rotate(45deg)
+	50%
+		transform: scale(1) rotate(45deg)
+
+.ball
+	width: 25px
+	height: 25px
+	position: relative
+	margin: 20px auto
+	&::before
+		content: ''
+		display: block
+		width: 90px
+		height: 2px
+		background-color: rgba(#000000, .4)
+		position: relative
+		left: -105px
+		top: 12px
+	&::after
+		content: ''
+		display: block
+		width: 90px
+		height: 2px
+		background-color: rgba(#000000, .4)
+		position: relative
+		left: 39px
+		top: 10px
+
+.double-bounce1, .double-bounce2
+	width: 100%
+	height: 100%
+	border-radius: 0
+	opacity: .6
+	position: absolute
+	top: 0
+	animation: ball-bounce 2s infinite ease-in-out
+
+.double-bounce2
+	animation-delay: -1s
+
+//-----------------sections--------------------//
+
+.section
+	& h2
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		margin-bottom: 20px
+	& .description_wrapper
+		text-align: center
+		position: relative
+		margin-bottom: 50px
+	&.s-about
+		& .animation_center
+			animation-duration: 1.8s
+		& .about
+			& ul
+				& li
+					font-size: 18px
+					font-weight: 700
+					color: rgba(#000000, .6)
+			& h3
+				letter-spacing: 6px
+				text-align: center
+				font-weight: 400
+				text-transform: uppercase
+				font-size: 20px
+				margin-bottom: 30px
+			& p
+				text-align: justify
+				font-size: 18px
+				margin-bottom: 25px
+				font-weight: 400
+				color: rgba(#000000, .7)
+			& .profile_image
+				text-align: center
+				& a:focus
+					outline: none
+				& img
+					border-radius: 50%
+					max-width: 220px
+					width: 100%
+					height: auto
+			& ul, li
+				padding: 0
+				margin: 0
+				list-style-type: none
+				& li
+					margin-bottom: 10px
+			& .tools_wrap
+				& li
+					display: inline-block
+					background: rgba(#000000, .8)
+					border-radius: 50%
+					width: 50px
+					height: 50px
+					font-size: 30px
+					padding-top: 6px
+					text-align: center
+					margin-right: 15px
+					transition: all .2s linear
+					&:hover
+						background: rgba(#ffffff, .8)
+						cursor: pointer
+	&.s-portfolio
+		.ball
+			&::before
+				background-color: rgba(#ffffff, .7)
+			&::after
+				background-color: rgba(#ffffff, .7)
+	&.s-portfolio
+		padding-bottom: 0
+		& #portfolio_grid
+			display: flex
+			flex-wrap: wrap
+		& .content
+			margin-top: 35px
+			ul, li
+				padding: 0
+				margin: 0
+				text-align: center
+			& li
+				list-style-type: none
+				margin: 0 10px
+				display: inline-block
+				cursor: pointer
+			& .filter_div
+				margin-bottom: 20px
+			& .portfolio_item
+				padding: 0
+				position: relative
+				display: none
+				& img
+					width: 100%
+					height: 240px
+					object-fit: fill
+					object-position: center
+					min-height: 190px
+				&:hover .item_overlay
+					opacity: 1
+					padding-top: 20%
+				& .item_overlay
+					position: absolute
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					background: rgba(#000000, .7)
+					transition: all .4s ease-out
+					opacity: 0
+					padding-bottom: 20%
+					& h3
+						color: #ffffff
+						margin-bottom: 0
+					& a
+						display: inline-block
+						text-align: center
+						width: 40%
+						height: 40px
+						line-height: 40px
+						background-color: transparent
+						color: #ffffff
+						border: 1px solid #ffffff
+						border-radius: 4px
+						transition: all .1s ease-in-out
+
+
+body
+	&.mfp-zoom-out-cur
+		overflow-y: hidden !important
+		margin-right: 0 !important
+
+.mfp-title
+	display: none
+
+.mfp-gallery
+	& .mfp-content
+		& .slide
+			text-align: center
+			background: #ffffff
+			width: 65%
+			margin: 0 auto
+			color: #000000
+			position: relative
+			max-height: 90vh
+			overflow-y: auto
+			img
+				width: 100%
+				height: auto
+				max-height: 600px
+				object-fit: contain
+			& .slide_text
+				border-top: 2px solid #000000
+				padding: 15px
+				text-align: left
+				& h1
+					opacity: .7
+					margin-bottom: 10px
+				& h3
+					opacity: .5
+					border-bottom: 1px solid rgba(#000000, .3)
+					padding-bottom: 20px
+					margin-top: 0
+					text-transform: uppercase
+				& h4
+					font-size: 16px
+					opacity: .5
+					border-bottom: 1px solid rgba(#000000, .3)
+					padding-bottom: 20px
+					margin-top: 0
+			& a
+				&.car_site
+					text-decoration: underline
+		& button
+			&.mfp-close
+				font-size: 40px
+				bottom: 0
+				top: unset
+				transition: all .2s linear
+
+
+button
+	&.mfp-arrow
+		&.mfp-arrow-right
+			&.mfp-prevent-close
+				&::after
+					border-left: 0
+				&::before
+					content: '\f0a9'
+					font-family: "Font Awesome 5 free"
+					font-weight: 900
+					border-left: 0
+					font-size: 35px
+		&.mfp-arrow-left
+			&.mfp-prevent-close
+				&::after
+					border-right: 0
+				&::before
+					content: '\f0a8'
+					font-family: "Font Awesome 5 free"
+					font-weight: 900
+					border-right: 0
+					font-size: 35px
+
+.poly
+	position: absolute
+	bottom: -40px
+	right: 20px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	z-index: 1000
+	& select
+		width: 60px
+		height: 30px
+		text-decoration: none
+		background: #000
+		border: none
+		color: #ffffff
+		background-size: 15px
+		background-position:  right 8px center
+		padding: 5px 8px
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		background-image: url(../img/drop_arrow_up.svg)
+		background-repeat: no-repeat
+		right: 0
+		cursor: pointer
+		line-height: 1.1
+		& option
+			cursor: pointer
+		&:focus
+			outline: none
+		&.active
+			background-image: url(../img/drop_arrow.svg)
+.logo_box
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 90%
+	& svg
+		cursor: pointer
+		&:hover
+			animation: rotate .3s ease-in-out
+		& li
+			list-style-type: none
+			margin-bottom: 10px
+			font-size: 16px
+
+
+.contact_box
+	margin: 5% 0 15% 0
+	& a
+		display: flex
+		align-items: center
+		color: rgba(#000000, .7)
+		transition: all .2s linear
+		& i
+			font-size: 36px
+			margin-right: 15px
+		& span
+			font-size: 16px
+			font-weight: 600
+
+.red
+    color: red
+    font-size: 18px
+
+.wpcf7-form
+    & label
+        color: rgba(0, 0, 0, 0.7)
+        font-size: 18px
+        margin-bottom: 5px
+    & p
+        margin: 0
+        padding: 0
+    & input
+        &.form_element
+            width: 100%
+            height: 40px
+            margin-bottom: 10px
+            padding: 5px 0 5px 10px
+            box-shadow: 1px 1px 4px #EBEBEB
+            border-radius: 4px
+            border: 1px solid #C2C2C2
+            font-size: 18px
+            &:focus
+                outline: none
+        &.form_btn
+            width: 30%
+            height: 50px
+            float: right
+            box-shadow: 1px 1px 4px #EBEBEB
+            border: 1px solid rgba(#000000, .7)
+            color: rgba(#000000, .7)
+            background: transparent
+            line-height: 40px
+            padding: 0 25px
+            font-size: 16px
+            text-transform: uppercase
+            font-weight: 600
+            margin: 10px auto 0 auto
+            transition: all .2s linear
+    & textarea
+        &.form_text
+            font-size: 18px
+            margin-top: 10px
+            padding-left: 10px
+            padding-top: 10px
+            border-radius: 4px
+            box-shadow: 1px 1px 4px #EBEBEB
+            width: 100%
+            max-width: 100%
+            max-height: 200px
+            resize: none
+            border: 1px solid #C2C2C2
+            &:focus
+              outline: none
+    & div
+        &.wpcf7-response-output
+            width: 40%
+
+//--------------footer--------------//
+
+.footer
+	padding: 50px 0
+	font-size: 13px
+	font-weight: 300
+	.social_wrap
+		float: right
+		line-height: 0
+		ul
+			margin: 0
+	& .col-md-12
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+.social_wrap
+	li
+		display: inline-block
+		background: rgba(#ffffff, .8)
+		border-radius: 50%
+		width: 50px
+		height: 50px
+		font-size: 30px
+		padding-top: 10px
+		text-align: center
+		margin-right: 15px
+		transition: all .2s linear
+		&:hover
+			background: rgba(#ffffff, .4)
+			cursor: pointer
+
+@import "media"
